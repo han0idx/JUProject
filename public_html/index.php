@@ -29,6 +29,7 @@
 	<li><a href='./tests?test=4'>test4</a></li>
 	<li><a href='./tests?test=5'>test5</a></li>
 	<li><a href='./tests?test=6'>test6</a></li>
+	<li><a href='./tests?test=6'>test6</a></li>
 	</ul>
 	";
 	
