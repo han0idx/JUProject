@@ -1,0 +1,86 @@
+body{
+width:1000px;
+margin:0 auto;
+}
+
+.clearfix:after {
+display: block;
+visibility: hidden;
+content: ".";
+clear: both;
+text-indent: -9999px;
+height: 0;
+}
+/**************************Common styles**********************/
+#content, #siteControls{
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+}
+
+/**************************Header***************************/
+#header{
+background-color:red;
+}
+
+#header ul {
+margin: 35px 0;
+padding: 0;
+font: 12px Verdana;
+list-style-type: none;
+}
+  
+#header li {
+display: inline;
+}
+  
+#header li a {
+padding: 5px 10px;
+border: 1px solid #aaa;
+background-color: #eee;
+color: #47a;
+text-decoration: none;
+}
+
+/**************************Container***************************/
+#container{
+background-color:blue;
+
+}
+#container:after{
+display: block;
+visibility: hidden;
+content: ".";
+clear: both;
+text-indent: -9999px;
+height: 0;
+}
+/**************************Content***************************/
+#content{
+background-color:yellow;
+width:750px;
+float:left;
+}
+#listbox{
+height:80px;
+width:500px;
+overflow-x:hidden;
+overflow-y:scroll;
+margin:0 auto;
+margin-top:50px;
+margin-bottom:50px;
+background-color:purple;
+}
+/**************************SiteControls***************************/
+#siteControls{
+background-color:green;
+width:240px;
+margin-left:10px;
+float:left;
+}
+
+/**************************Footer***************************/
+#footer{
+background-color:gray;
+
+}

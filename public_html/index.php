@@ -9,11 +9,20 @@
 		file which makes for very clean code!
 	*/
 	
-	$setInIndexDotPhp = "Hey! I was set in the index.php file.";
+	$testList = "
+	<ul>
+	<li><a href='./tests?test=1'>test1</a></li>
+	<li><a href='./tests?test=2'>test2</a></li>
+	<li><a href='./tests?test=3'>test3</a></li>
+	<li><a href='./tests?test=4'>test4</a></li>
+	<li><a href='./tests?test=5'>test5</a></li>
+	<li><a href='./tests?test=6'>test6</a></li>
+	</ul>
+	";
 	
 	// Must pass in variables (as an array) to use in template
 	$variables = array(
-		'setInIndexDotPhp' => $setInIndexDotPhp
+		'testList' => $testList,
 	);
 	
 	renderLayoutWithContentFile("home.php", $variables);
