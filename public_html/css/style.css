@@ -1,6 +1,7 @@
 body{
 width:1000px;
 margin:0 auto;
+background-image:url("../img/layout/grey_wash_wall.png");
 }
 
 .clearfix:after {
@@ -62,7 +63,7 @@ width:750px;
 float:left;
 }
 #listbox{
-height:80px;
+height:400px;
 width:500px;
 overflow-x:hidden;
 overflow-y:scroll;
@@ -75,7 +76,7 @@ background-color:purple;
 #siteControls{
 background-color:green;
 width:240px;
-margin-left:10px;
+margin-left:5px;
 float:left;
 }
 

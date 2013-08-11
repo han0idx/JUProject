@@ -17,6 +17,18 @@
 	<li><a href='./tests?test=4'>test4</a></li>
 	<li><a href='./tests?test=5'>test5</a></li>
 	<li><a href='./tests?test=6'>test6</a></li>
+	<li><a href='./tests?test=1'>test1</a></li>
+	<li><a href='./tests?test=2'>test2</a></li>
+	<li><a href='./tests?test=3'>test3</a></li>
+	<li><a href='./tests?test=4'>test4</a></li>
+	<li><a href='./tests?test=5'>test5</a></li>
+	<li><a href='./tests?test=6'>test6</a></li>
+	<li><a href='./tests?test=1'>test1</a></li>
+	<li><a href='./tests?test=2'>test2</a></li>
+	<li><a href='./tests?test=3'>test3</a></li>
+	<li><a href='./tests?test=4'>test4</a></li>
+	<li><a href='./tests?test=5'>test5</a></li>
+	<li><a href='./tests?test=6'>test6</a></li>
 	</ul>
 	";
 	
