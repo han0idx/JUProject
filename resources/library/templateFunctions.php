@@ -40,4 +40,30 @@
 	
 		require_once(TEMPLATES_PATH . "/footer.php");
 	}
+	
+	
+	class iSQL {
+
+
+	
+	function connect() {
+	$db = mysqli_connect('127.0.0.1','root','') or die("Database error"); 
+	mysqli_select_db($db ,'testlist');
+	}
+	
+	function selectQuery($q){
+	
+	$result = mysqli_query("set names 'utf8'"); 
+	// $query = "select * from YOUR_DB_TABLE"; 
+	$query = $q; 
+	$result = mysqli_query($query);
+	}
+	
+	function close(){
+	$db = mysqli_connect('127.0.0.1','root','') or die("Database error"); 
+	mysqli_close($db); 
+	}
+
+
+}
 ?>

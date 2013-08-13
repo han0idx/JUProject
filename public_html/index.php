@@ -9,6 +9,11 @@
 		file which makes for very clean code!
 	*/
 	
+	$mysql=new iSQL();
+	$mysql->connect();
+	$mysql->selectQuery("SELECT * FROM `testlist` WHERE id=1");
+	$mysql->close();
+	
 	$testList = "
 	<ul>
 	<li><a href='./tests?test=1'>test1</a></li>
