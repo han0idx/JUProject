@@ -72,6 +72,37 @@ margin-top:50px;
 margin-bottom:50px;
 background-color:purple;
 }
+
+#listbox .odd{
+    background-color: rgb(158, 34, 255);
+}
+
+#listbox ul{
+    padding: 0;
+    margin-left: 5px;
+}
+
+#listbox li{
+    list-style-type: none;
+}
+
+#listbox a{
+    color:white;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+}
+#listbox a:hover{
+    background-color: rgb(93, 172, 68);
+    padding-right: 118px;
+}
+#contentlist{
+    padding: 20px;
+    margin: 0 auto;
+    width: 400px;
+    text-align: center;
+    
+}
 /**************************SiteControls***************************/
 #siteControls{
 background-color:green;
