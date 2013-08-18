@@ -43,6 +43,12 @@ color: #47a;
 text-decoration: none;
 }
 
+#header h1 a{
+    text-decoration: none;
+    color:black;
+    padding: 0 836px 50px 0;
+}
+
 /**************************Container***************************/
 #container{
 background-color:blue;
@@ -99,9 +105,20 @@ background-color:purple;
 #contentlist{
     padding: 20px;
     margin: 0 auto;
-    width: 400px;
-    text-align: center;
-    
+    width: 90%;
+    position: relative;
+}
+#contentlist li{
+    margin-top: 50px;
+    list-style-type: none; 
+}
+
+#contentlist input[type="checkbox"] {
+margin-right: 9px;
+}
+
+.mrfull{
+    cursor: pointer;
 }
 /**************************SiteControls***************************/
 #siteControls{
@@ -115,4 +132,44 @@ float:left;
 #footer{
 background-color:gray;
 
+}
+
+/*************************Extras***************************/
+
+#element_to_pop_up { display:none; 
+background-color: #fff;
+border-radius: 10px 10px 10px 10px;
+box-shadow: 0 0 25px 5px #999;
+color: #111;
+display: none;
+min-width: 450px;
+padding: 25px;
+}
+
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.clearfix {
+    display: inline-block;
+}
+
+
+.numberCircle {
+    position: absolute;
+    left: 3px;
+    margin-top: -8px;
+    font-size: 30px;
+    background-color: rgb(209, 209, 209);
+    width: 32px;
+    text-align: center;
+    border-radius: 27px;
+    color: rgb(44, 43, 43);
+    border: 2px solid rgb(124, 124, 124);
 }
