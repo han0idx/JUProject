@@ -1,7 +1,10 @@
 body{
 width:1000px;
 margin:0 auto;
-background-image:url("../img/layout/grey_wash_wall.png");
+background-image:url("../img/layout/bck.jpg");
+font-family: Georgia, Verdana, “Lucida Sans Unicode”, sans-serif;
+font-size: 12px;
+color: #999;
 }
 
 .clearfix:after {
@@ -17,6 +20,16 @@ height: 0;
 -webkit-border-radius: 10px;
 -moz-border-radius: 10px;
 border-radius: 10px;
+
+background: #fff;
+-moz-border-radius: 10px;
+-khtml-border-radius: 10px;
+-webkit-border-radius: 10px;
+-moz-box-shadow: 0px 0px 8px rgba(0,0,0,0.3);
+-khtml-box-shadow: 0px 0px 8px rgba(0,0,0,0.3);
+-webkit-box-shadow: 0px 0px 8px rgba(0,0,0,0.3);
+position: relative;
+z-index: 90;
 }
 
 /**************************Header***************************/
@@ -51,7 +64,7 @@ text-decoration: none;
 
 /**************************Container***************************/
 #container{
-background-color:blue;
+/*background-color:blue;*/
 
 }
 #container:after{
@@ -64,9 +77,11 @@ height: 0;
 }
 /**************************Content***************************/
 #content{
-background-color:yellow;
-width:750px;
-float:left;
+width: 702px;
+float: left;
+clear: both;
+margin: 0px auto;
+
 }
 #listbox{
 height:400px;
@@ -110,6 +125,7 @@ background-color:purple;
 }
 #contentlist li{
     margin-top: 50px;
+    margin-bottom: 42px;    
     list-style-type: none; 
 }
 
@@ -119,24 +135,25 @@ margin-right: 9px;
 
 .mrfull{
     cursor: pointer;
+    font-size: 16px;
 }
 /**************************SiteControls***************************/
 #siteControls{
-background-color:green;
-width:240px;
-margin-left:5px;
-float:left;
+    width: 246px;
+    margin-left: 39px;
+    float: left;
 }
 
 /**************************Footer***************************/
 #footer{
 background-color:gray;
+margin-top: 30px;
 
 }
 
 /*************************Extras***************************/
 
-#element_to_pop_up { display:none; 
+.element_to_pop_up { display:none; 
 background-color: #fff;
 border-radius: 10px 10px 10px 10px;
 box-shadow: 0 0 25px 5px #999;
@@ -164,12 +181,113 @@ padding: 25px;
 .numberCircle {
     position: absolute;
     left: 3px;
-    margin-top: -8px;
+    margin-top: -13px;
     font-size: 30px;
     background-color: rgb(209, 209, 209);
     width: 32px;
     text-align: center;
     border-radius: 27px;
-    color: rgb(44, 43, 43);
-    border: 2px solid rgb(124, 124, 124);
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(187, 187, 187);
+}
+
+.rectangle {
+    background: #7f9db9;
+    height: 50px;
+    width: 731px;
+    position: relative;
+    left: -15px;
+    top: 30px;
+    float: left;
+    -moz-box-shadow: 0px 0px 4px rgba(0,0,0,0.55);
+    -khtml-box-shadow: 0px 0px 4px rgba(0,0,0,0.55);
+    -webkit-box-shadow: 0px 0px 4px rgba(0,0,0,0.55);
+    z-index: 100;
+}
+
+.rectangle h2 {
+    font-size: 30px;
+    color: #fff;
+    margin-top: 4px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+.triangle-l {
+    border-color: transparent #7d90a3 transparent transparent;
+    border-style:solid;
+    border-width:15px;
+    height:0px;
+    width:0px;
+    position: relative;
+    left: -30px;
+    top: 65px;
+    z-index: -1; /* displayed under bubble */
+}
+
+.triangle-r {
+    border-color: transparent transparent transparent #7d90a3;
+    border-style: solid;
+    border-width: 15px;
+    height: 0px;
+    width: 0px;
+    position: relative;
+    left: 702px;
+    top: 35px;
+    z-index: -1;
+}
+
+
+.menu {
+	position: relative;
+	top:3px;
+	left: 50px;
+	z-index: 80; /* the stack order: displayed under bubble (90) */
+}
+
+.menu ul li {
+	-webkit-transform: rotate(-45deg); /* rotate the list item */
+	-moz-transform: rotate(-45deg); /* rotate the list item */
+	width: 50px;
+	overflow: hidden;	
+	margin: 10px 0px;
+	padding: 5px 5px 5px 18px;
+	float: left;
+	background: #7f9db9;
+	text-align: right;
+}
+
+.menu ul li a {
+	color: #fff;
+	text-decoration: none;
+	display:block;
+}
+
+.menu ul li.l1 {
+	background: rgba(131,178,51,0.65);
+}
+
+.menu ul li.l1:hover {
+	background: rgb(131,178,51);
+}
+
+.menu ul li.l2 {
+	background: rgba(196,89,30,0.65);
+}
+
+.menu ul li.l2:hover {
+	background: rgb(196,89,30);
+}
+
+.menu ul li.l3 {
+	background: rgba(65,117,160,0.65);
+}
+
+.menu ul li.l3:hover {
+	background: rgb(65,117,160);
+}
+
+.menu span {
+	margin: 15px 80px 0px 0px;
+	float:right;
 }

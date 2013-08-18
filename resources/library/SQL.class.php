@@ -35,7 +35,7 @@
                 $out="<ul>";
                 while($donnees = mysqli_fetch_assoc($resultat))
                 {
-                $out.="<li><input class='checkin' name='checkin' type='checkbox'/><span class='mrfull'><span class='numberCircle'>".$i."</span>".$donnees['title']."</span><div id='element_to_pop_up'>".$donnees['out2Produce']."</div></li>";
+                $out.="<li><input class='checkin' name='checkin' type='checkbox'/><span value='element_to_pop_up".$i."' class='mrfull'><span class='numberCircle'>".$i."</span>".$donnees['title']."</span><div id='element_to_pop_up".$i."' class='element_to_pop_up'>".$donnees['out2Produce']."</div></li>";
                 $i++;
                 }
                 $out.="</ul>";

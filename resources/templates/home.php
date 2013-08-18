@@ -1,13 +1,14 @@
 <!-- Homepage content -->
-<h2>Home Page</h2>
-
+<div class="rectangle"><h2>Home page</h2></div>
+<div class="triangle-l"></div>
+<div class="triangle-r"></div>
  
 <?php 
 //Si le GET["test"] est defini alors afficher son contenu
         if(isset($_GET["test"])): 
 ?>
     <div id="contentlist">
-        <?php   echo 'your inside get page';
+        <?php   
                 echo $fullList;
         ?>
     </div>
@@ -26,10 +27,12 @@
             $(function() {
                     $('.mrfull').bind('click', function(e) {
                             e.preventDefault();
-                            $('#element_to_pop_up').bPopup({
+//                        $(this).next().bPopup({
+                        var popup = $(this).attr('value');
+                        $('#'+popup).bPopup({
                             speed: 650,
                             transition: 'slideIn'
-                    });
+                        });
                     
                     });
                     
