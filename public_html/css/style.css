@@ -16,7 +16,23 @@ text-indent: -9999px;
 height: 0;
 }
 /**************************Common styles**********************/
-#content, #siteControls{
+#content{
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+
+background: #fff;
+-moz-border-radius: 10px;
+-khtml-border-radius: 10px;
+-webkit-border-radius: 10px;
+-moz-box-shadow: 0px 0px 8px rgba(0,0,0,0.3);
+-khtml-box-shadow: 0px 0px 8px rgba(0,0,0,0.3);
+-webkit-box-shadow: 0px 0px 8px rgba(0,0,0,0.3);
+position: relative;
+z-index: 90;
+}
+
+#siteControls{
 -webkit-border-radius: 10px;
 -moz-border-radius: 10px;
 border-radius: 10px;
@@ -65,7 +81,7 @@ text-decoration: none;
 /**************************Container***************************/
 #container{
 /*background-color:blue;*/
-
+position: relative;
 }
 #container:after{
 display: block;
@@ -84,18 +100,35 @@ margin: 0px auto;
 
 }
 #listbox{
-height:400px;
-width:500px;
+height:550px;
+width:640px;
 overflow-x:hidden;
 overflow-y:scroll;
 margin:0 auto;
 margin-top:50px;
 margin-bottom:50px;
-background-color:purple;
+}
+.fullBtn, .mrBtn{
+    position: absolute;
+    top: 14%;
+    color: black;
+    border: 1px solid black;
 }
 
+.fullBtn{
+    right: 13px;
+    text-decoration: none;
+}
+.mrBtn{
+    right: 80px;
+    text-decoration: none;
+}
+
+#listbox .even{
+   border: 2px solid rgb(170, 170, 170);
+}
 #listbox .odd{
-    background-color: rgb(158, 34, 255);
+    background-color: rgb(228, 228, 228);
 }
 
 #listbox ul{
@@ -105,18 +138,26 @@ background-color:purple;
 
 #listbox li{
     list-style-type: none;
+    padding: 10px 0px;
+    margin: 10px 0px;
+    -webkit-border-radius: 14px;
+    -moz-border-radius: 14px;
+    border-radius: 14px;
+    position:relative;
 }
 
-#listbox a{
-    color:white;
+.testTitle{
+    color:black;
     font-size: 16px;
     font-weight: bold;
     text-decoration: none;
+    margin-left: 10px;
+    width: 450px;
 }
-#listbox a:hover{
+/*#listbox a:hover{
     background-color: rgb(93, 172, 68);
     padding-right: 118px;
-}
+}*/
 #contentlist{
     padding: 20px;
     margin: 0 auto;
@@ -290,4 +331,47 @@ padding: 25px;
 .menu span {
 	margin: 15px 80px 0px 0px;
 	float:right;
+}
+
+.button {
+   border-top: 1px solid #96d1f8;
+   background: #65a9d7;
+   background: -webkit-gradient(linear, left top, left bottom, from(#3e779d), to(#65a9d7));
+   background: -webkit-linear-gradient(top, #3e779d, #65a9d7);
+   background: -moz-linear-gradient(top, #3e779d, #65a9d7);
+   background: -ms-linear-gradient(top, #3e779d, #65a9d7);
+   background: -o-linear-gradient(top, #3e779d, #65a9d7);
+   padding: 5px 10px;
+   -webkit-border-radius: 8px;
+   -moz-border-radius: 8px;
+   border-radius: 8px;
+   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: white;
+   font-size: 14px;
+   font-family: Georgia, serif;
+   text-decoration: none;
+   vertical-align: middle;
+   }
+.button:hover {
+   border-top-color: #28597a;
+   background: #28597a;
+   color: #ccc;
+   }
+.button:active {
+   border-top-color: #1b435e;
+   background: #1b435e;
+   }
+   
+   
+.scroller {
+  position: absolute;
+  top: 0;
+ }
+
+.scroller.fixed {
+  position: fixed;
+  top: 0;
 }

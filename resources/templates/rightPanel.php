@@ -1,4 +1,4 @@
-<div id="siteControls">
+<div id="siteControls" class="scroller">
 	<ul class="categories">
 		<li>PHP</li>
 		<li>HTML</li>

@@ -1,5 +1,5 @@
 <!-- Homepage content -->
-<div class="rectangle"><h2>Home page</h2></div>
+<div class="rectangle"><h2>Liste de tests</h2></div>
 <div class="triangle-l"></div>
 <div class="triangle-r"></div>
  

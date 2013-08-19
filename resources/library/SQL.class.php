@@ -17,7 +17,7 @@
                 {
                     if($i%2==0) $class="odd";
                     else $class="even";
-                    $out.="<li class='".$class."'><a href='.?test=".$donnees['id']."'>".$donnees['title']."</a></li>";
+                    $out.="<li class='".$class."'><div class='testTitle'>".$donnees['title']."</div><a class='mrBtn button' href='.?test=".$donnees['id']."&type=mr'>MR</a><a class='fullBtn button' href='.?test=".$donnees['id']."&type=full'>FULL</a></li>";
                     $i++;
                 }
                 $out.="</ul>";
