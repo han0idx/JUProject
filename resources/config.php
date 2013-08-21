@@ -1,4 +1,4 @@
-<?php
+<?php 
 
 /*
 	The important thing to realize is that the config file should be included in every
